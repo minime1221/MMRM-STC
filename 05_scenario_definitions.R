@@ -8,16 +8,16 @@
 # Date: 2024
 # ================================================================================
 #
-# FACTORIAL DESIGN: 2 (Dropout) × 2 (Correlation) × 2 (Overlap) × 2 (TVEM/TIEM)
+# FACTORIAL DESIGN: 3 (Dropout) × 2 (Correlation) × 2 (Overlap) × 2 (TVEM/TIEM)
 #
 # Dropout Severity (3 levels):
 #   - NOdrop: No missing data
 #   - Moderate: dropout_inct = c(-3, -2.8, -2.5)
 #   - Severe: dropout_inct = c(-3.0, -2.5, 0)
 #
-# Correlation (2 levels):
-#   - High (moderate): rho = c(0.65, 0.60, 0.58, 0.67, 0.62, 0.68)
-#   - Low: rho = c(0.22, 0.18, 0.15, 0.24, 0.20, 0.25)
+# Within-Subject Correlation (2 levels):
+#   - Strong: rho = c(0.65, 0.60, 0.58, 0.67, 0.62, 0.68)
+#   - Weak: rho = c(0.22, 0.18, 0.15, 0.24, 0.20, 0.25)
 #
 # Baseline Covariate Overlap (2 levels):
 #   - Less overlap: AC meanX = c(0.3, 0.3), BC meanX = c(0.6, 0.6)
