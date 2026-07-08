@@ -28,7 +28,7 @@ source("R/05_scenario_definitions.R")
 # --- STEP 2: CONFIGURE BATCH PARAMETERS ---
 
 # IMPORTANT: Set these parameters before running
-num_simulations <- 1000            # Number of iterations per scenario
+num_simulations <- 3000            # Number of iterations per scenario
                                    # For testing: 50 (5-10 min per scenario)
                                    # For final: 3000 (30-60 min per scenario)
 
@@ -212,7 +212,6 @@ if (!is.null(all_results_bucher)) {
 
 cat("\n")
 cat(sprintf("Timestamp: %s\n", timestamp))
-cat("Next: Run 09_results_analysis_main.R to analyze results\n")
 cat("================================================================================\n\n")
 
 # End of batch simulation script
